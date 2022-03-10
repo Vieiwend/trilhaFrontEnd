@@ -11,7 +11,7 @@
 
 ## Indíce
 
-- [Exercícios](#-exercícios)
+- [Exercícios](#✔-exercícios)
 - [Fontes utilizadas](#fontes-utilizadas)
 - [Onde encontrar o projeto](#onde-encontrar-o-projeto-👀)
 
