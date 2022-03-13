@@ -1,0 +1,51 @@
+.tabuleiro-div{ 
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}     
+
+.preto{
+    height: 48px;
+    width: 48px;
+    margin: 0px;
+    background-color: black;
+    border: 1px solid white;
+}      
+
+.cinza{
+    background-color: grey;
+    height:48px;
+    width: 48px;
+    margin: 0px;
+    border: 1px solid white;
+}
+
+.pretotab{
+    height:46px;
+    width: 46px;
+    margin: 0px;
+    background-color: black;
+    border: 1px solid white;
+}      
+
+.cinzatab{
+    background-color: grey;
+    height:46px;
+    width: 46px;
+    margin: 0px;
+    border: 1px solid white;    
+}
+caption{
+    text-align: center;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+    
+
+
