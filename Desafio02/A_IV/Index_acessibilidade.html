@@ -1,30 +1,64 @@
 <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index_acessibilidade</title>
+    <style>
+        table,td,th,tr {
+            border: 1px solid grey;
+           border-collapse: unset;
+           margin-bottom: 80px;
+        }
+    </style>
+</head>
+</body>
+</html>
 <body>
     <header>
         <h1>Title</h1>
     </header>
         <main>
-            <section>
-                <!-- Utilizei a tag ul para lista não ordenada, e defini o type como circle. poderiam ser outros. 
-                Para lista ordenada utilizar ol. Iniciará com 01, mas posso iniciar com outro n° (start=N°).
-                Letra tbm pode ser utilizada (type= A,a,I).
-                href=# não linca com nada-->
+
+            <section>   
                 <ul type="disc">
                     <li><a href="#">Item 1</a></li>
                     <li><a href="#">Item 2</a></li>
                     <li><a href="#">Item 3</a></li>
                 </ul>
             </section>
+
             <section>
-                <h2>Section</h2>
-                <article> <h2>Article</h2></article>    
-                <article> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Donec</p></article>
-            </section>  
-            <section> 
-                <h2 style="Aside">Aside</h2>
-            </section>
+                <h2>Subtitle</h2>    
+                <article> <h3 >What is Lorem Ipsum</h3></article>
+                <article> <p>Lorem ipsum is simply dummy text of the priting and typesetting industry.</p></article>
+            </section> 
+
+            <section>
+                <Table>
+                    <thead>
+                        <tr> 
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th style="text-align: center;">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                        </tr>   
+                    </tbody>
+                </Table>
+            </section> 
+
         </main>
-        <footer> 
-            <h2>Footer</h2>
+
+        <img src="https://www.w3.org/2015/10/W3C-Developers_Assets/W3C-Developers-Dark.png" width="80px" height="30px">
+
+        <footer>    
+            <p>All rights reserved. :)</p>    
         </footer>
 </body>
