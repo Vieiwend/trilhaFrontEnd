@@ -1,0 +1,26 @@
+body,li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    list-style: none;
+}
+
+.box{
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu li{
+    padding-left: 40px;
+}
