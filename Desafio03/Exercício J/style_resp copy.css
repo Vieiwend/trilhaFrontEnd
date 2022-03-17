@@ -1,0 +1,58 @@
+body,li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    list-style: none;
+  
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{   
+    width: 500px;
+    border: 1px solid black;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+
+.boxpai{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;  
+    align-items: center;
+    justify-content: center;
+}
+
+.boxfilho{
+    display: flex;
+    width: 530px;
+    flex-direction: row;
+    padding: 15px;  
+    align-items: center;
+    justify-content: end;
+}
+
+.menu{
+    width: 120px;
+    border: 1px solid black;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0px;
+    padding: 10px 10px;
+    flex-wrap: nowrap;  
+}
+
+.menu li{
+    padding-bottom: 10px;   
+}
