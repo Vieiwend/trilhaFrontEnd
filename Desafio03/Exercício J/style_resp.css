@@ -5,6 +5,11 @@ body,li{
   
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 .logo{   
     width: 500px;
     border: 1px solid black;
@@ -14,32 +19,40 @@ body,li{
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0px;
 }
 
-.container{
+
+.boxpai{
     display: flex;
+    flex-direction: row;
+    padding: 15px;  
+    align-items: center;
     justify-content: center;
-    position: relative;
 }
 
+.boxfilho{
+    display: flex;
+    width: 530px;
+    flex-direction: row;
+    padding: 15px;  
+    align-items: center;
+    justify-content: end;
+}
 
 .menu{
-    width: 100px;
+    width: 120px;
+    border: 1px solid black;
     display: flex;  
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     border: 1px solid black;
-    padding: 10px;
-    position: absolute;
-    top: 118px;
-    left: 660px;
+    margin: 0px;
+    padding: 10px 10px;
+    flex-wrap: nowrap;  
 }
 
 .menu li{
-    padding-bottom: 15px;
-}
-
-.pai {
-    height: 330px;
+    padding-bottom: 10px;   
 }
