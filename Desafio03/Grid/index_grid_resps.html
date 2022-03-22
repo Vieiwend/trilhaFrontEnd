@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_resps</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+    <h1>Respostas</h1>
+    <div>
+        <p><span class="negrito"> a) </span> CSS Grid Layout introduz um sistema bi-dimensional de grid (literalmente
+            "grades") para CSS. Grids podem ser usados para o design de layouts de grandes seções de uma webpage, assim
+            como de pequenos elementos de interface.
+        </p>
+    </div>
+
+    <div>
+        <p><span class="negrito">b) Display-grid:</span> Torna o elemento um grid container;</p>
+        <p><span class="negrito">Display-inline-grid:</span> Torna o elemento um grid container porém com comportamento
+            inline;</p>
+        <p><span class="negrito">Display-subgrid:</span> Para grids dentro de grids (ainda não é suportado, porém você
+            pode normalmente colocar display: grid; no grid dentro do grid que funciona);</p>
+        <p><span class="negrito">Grid-template-columns:</span> Define o número total de colunas que serão
+            criadas no grid. <br>Ex: Grid-template-columns: 100px 100px 100px 100px; = Quatro colunas de 100px de largura
+            são criadas.</p>
+        <p><span class="negrito">Grid-template-rows:</span> Define a quantidade de linhas no grid. Ex:
+            grid-template-rows: 50px 100px 50px 150px;</p>
+        <p><span class="negrito">Grid-template-areas:</span> Define áreas específicas no grid. O ponto (.) pode ser
+            utilizado para criar áreas vazias. Ex:grid-template-areas: "logo nav nav" = Cria 3 colunas e 3 linhas.</p>
+        <p><span class="negrito">Grid-template:</span> Atalho para definir o grid-template-columns, grid-template-rows
+            e grid-template-areas.ex: grid-template: 50px 1fr / 100px 1fr 100px;</p>
+        <p><span class="negrito">Gap:</span> Define o gap (gutter) entre os elementos do grid. Ex: gap: 20px = Define
+            20px entre os elementos do grid (linha e coluna).</p>
+        <p><span class="negrito">Grid-auto-columns:</span> Define o tamanho das colunas do grid implícito (gerado
+            automaticamente, quando algum elemento é posicionado em uma coluna que não foi definida). Ex:
+            grid-auto-columns: 100px = As colunas implícitas, geradas automaticamente, terão 100px de largura.</p>
+        <p><span class="negrito">Grid-auto-rows:</span> Define o tamanho das linhas do grid implícito (gerado
+            automaticamente, quando algum elemento é posicionado em uma linha que não foi definida). Ex: grid-auto-rows:
+            100px = As linhas implícitas, geradas automaticamente, terão 100px de altura.</p>
+        <p><span class="negrito">Grid-auto-flow:</span> Define o fluxo dos itens no grid. Se eles vão automaticamente
+            gerar novas linhas ou colunas. ex: grid-auto-flow: row = Automaticamente gera novas linhas.</p>
+        <p><span class="negrito">Grid:</span> Atalho geral para definir o grid: grid-template-rows,
+            grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns e grid-auto-flow. Ex: grid:
+            100px / 1fr 1fr = Gera uma linha com 100px de altura e 2 colunas com 1fr.</p>
+        <p><span class="negrito">Justify-content:</span> Justifica os itens do grid em relação ao eixo x (horizontal).
+            Ex: justify-content: start = Justifica os itens ao início.</p>
+        <p><span class="negrito">Align-content:</span> Alinha os itens do grid em relação ao eixo y (vertical).ex:
+            align-content: start = Alinha os itens ao início.</p>
+        <p><span class="negrito">Justify-items:</span> Justifica o conteúdo dos itens do grid em relação ao eixo x
+            (horizontal). Justifica em relação a célula. Ex: justify-items: start// Justifica os itens ao início.</p>
+        <p><span class="negrito">Align-items:</span> Alinha o conteúdo dos itens do grid em relação ao eixo y
+            (vertical). Alinha em relação a célula. Ex: align-items: start = Alinha os itens ao início.</p>
+    </div>
+    <div>
+        <p><span class="negrito">c) Grid-item:</span> Os Grid Itens são os filhos diretos do Grid Container. Um grid
+            item
+            pode ser explicito ou implícito. Explicito é quanto você define ele explicitamente no container e implícito
+            é quanto ele é criado automaticamente para preencher o conteúdo no grid.
+        <p><span class="negrito">Grid-column:</span> Define quais colunas serão ocupadas pelo grid item. É possível
+            definir uma linha de início e final, assim o item irá ocupar múltiplas colunas. Ex: Grid-column: 1 = O item
+            ocupará a coluna 1.</p>
+        <p><span class="negrito"> Grid-row :</span> Define quais linhas serão ocupadas pelo grid item. Ex: grid-row:
+            1 = O item ocupará a linha 1.</p>
+        <p><span class="negrito">Grid-area:</span> Define a área do item do grid. É um atalho para
+            grid-row-start,grid-column-start, grid-row-end, grid-column-end. Ex: grid-area: 1 / 2 / 4 / 3; = Este é um
+            atalho para:
+            grid-row-start: 1;grid-column-start: 2;grid-row-end: 4;grid-column-end: 3;</p>
+        <p><span class="negrito">Justify-self:</span> Justifica o item do grid em relação ao eixo x (horizontal).
+            Justifica em relação a célula.
+            Ex: justify-self: start// Justifica o item ao início.</p>
+        <p><span class="negrito">Align-self:</span> Justifica o item do grid em relação ao eixo y (vertical). Alinha
+            em relação a célula. Ex: align-self: start = Alinha o item ao início.</p>
+    </div>
+    <div>
+        <p><span class="negrito">d)</span> FR é uma unidade fracional. Ex: grid-template-columns: 1fr 2fr; = Duas
+            colunas
+            são criadas, sendo a segunda com o dobro do tamanho da primeira. O tamanho do conteúdo é respeitado, ou
+            seja, se o conteúdo na primeira coluna for maior que o da segunda, a primeira será maior. </p>
+    </div>
+    <div>
+        <p><span class="negrito">e)</span> Ex: repeat(3, 1fr); = Cria 3 colunas com 1fr de tamanho. O repeat seria a
+            mesma coisa que escrever 1fr 1fr 1fr. </p>
+    </div>
+    <div>
+        <p><span class="negrito">f)</span> São as linhas que formam o grid. Diferentes das rows, que traduzindo também
+            significam linhas, porém são propriedades distintas.
+            Por exemplo, uma row possuí duas linhas, uma no inicio e uma no final. </p>
+    </div>
+    <div>
+        <p><span class="negrito">g)</span> É a menor unidade que você pode ter em sua grade CSS. É o espaço entre quatro
+            linhas de grade que se cruzam e conceitualmente muito parecido com uma célula de tabela. </p>
+    </div>
+    <div>
+        <p><span class="negrito">h)</span> É uma ou mais células que compõem uma área retangular do grid. As Áreas grid
+            quando se coloca um item usando line-based placement (posicionamento baseado em colunas e linha)ou quando
+            define áreas usando named grid areas(substituindo o nome). </p>
+    </div>
+</body>
+
+</html>
