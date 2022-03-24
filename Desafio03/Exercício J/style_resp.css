@@ -2,57 +2,93 @@ body,li{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     list-style: none;
-  
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-}
-
-.logo{   
-    width: 500px;
+.box{
     border: 1px solid black;
-    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0px;
-}
-
-
-.boxpai{
-    display: flex;
-    flex-direction: row;
-    padding: 15px;  
-    align-items: center;
-    justify-content: center;
-    }
-
-.boxfilho{
-    display: flex;
-    width: 530px;
-    flex-direction: row;
-    padding: 15px;  
-    align-items: center;
-    justify-content: end;
 }
 
 .menu{
-    width: 120px;
-    border: 1px solid black;
-    display: flex;  
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
-    margin: 0px;
-    padding: 10px 10px;
-    flex-wrap: nowrap;  
 }
 
 .menu li{
-    padding-bottom: 10px;   
+    padding-left: 40px;
 }
+
+figure{
+    display: none;
+}
+
+#menuguer{
+    display: none;
+}
+
+@media (max-width:700px){
+
+    body,li{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        list-style: none;
+    }
+    
+    .box{
+        border: 1px solid black;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 76px;
+    }
+    
+    #menu1{
+        display: none;
+    }
+   
+    
+    figure{
+        display: flex;
+        margin: 10px;
+    }
+ 
+    /*menu superior*/
+    
+    .boxpai{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: flex-end;
+        }
+    
+    .boxfilho{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+        align-items: center;
+        border: 1px solid black;
+    }
+    
+    #menuguer{
+        display: flex;
+    }
+    
+    #menuguer li{
+        padding-bottom: 10px;
+        margin: 0px;
+        
+
+    }
+
+}
+

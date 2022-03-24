@@ -1,0 +1,177 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+    grid-template-columns: 400px 100px;
+    grid-template-rows: 50px 50px 200px 50px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "section aside"
+    "footer footer";    
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 100px;  
+    
+}
+
+header{
+    display: grid;
+    background-color: darkgray;
+    grid-area: header;
+    padding: 10px 10px;
+    align-content: center;
+}
+
+nav {
+    display: grid;
+    background-color: blue;
+    color: white;
+    grid-area: nav;
+    padding: 10px 10px; 
+    align-content: center;
+}
+
+
+
+article{
+    display: grid;
+    align-items: center;
+}
+
+#article {
+    background-color: gray;
+    grid-area: section;
+    padding: 10px 10px; 
+    width: 320px;
+    height: 120px;
+}
+
+#lorem{
+    display: none;
+}
+
+main{
+    background-color: darkgray;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 340px;
+
+}
+section{
+    background-color: darkgray;
+    grid-area: section;
+    padding: 10px 10px;
+}
+
+aside{
+    display: grid;
+    background-color: darkgray;
+    grid-area: aside;
+    padding: 10px 10px;
+    align-content: flex-start;
+}
+
+footer{
+    display: grid;
+    background-color: darkgray;
+    grid-area: footer;
+    padding: 10px 10px;
+    align-content: center;
+}
+
+#lista{
+    display: none;
+}
+
+@media (max-width: 540px) {
+    
+    body{
+        font-size: 36;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 90px 1fr 90px 90px;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer" ;
+    }
+
+    header{
+        display: grid;
+        background-color: darkgray;
+        grid-area: header;
+        padding: 10px 10px;
+        align-content: center;
+    }
+
+    nav {
+        display: grid;
+        background-color: blue;
+        color: white;
+        grid-area: nav;
+        padding: 10px 10px; 
+        align-content: center;
+    }
+
+    #nav{
+        display: none;
+    }
+    
+    
+    #lista{
+        display: block;
+        list-style: none;
+    }
+
+    
+    #article {
+        display: none;
+    }
+
+    #lorem{
+        display: grid;
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    main{
+        grid-area: main;
+        background-color: darkgray;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 340px;
+        
+    
+    }
+    section{
+        display: none;
+        background-color: darkgray;
+        grid-area: section;
+        padding: 10px 10px;
+    }
+    
+    aside{
+        display: grid;
+        background-color: darkgray;
+        grid-area: aside;
+        padding: 10px 10px;
+        align-content: center;
+    }
+    
+    footer{
+        display: grid;
+        background-color: darkgray;
+        grid-area: footer;
+        padding: 10px 10px;
+        align-content: center;
+    }
+    
+    
+}        
+

@@ -1,4 +1,6 @@
 body{
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18;
@@ -33,6 +35,22 @@ nav{
     align-content: center;
 }
 
+article{
+    display: grid;
+    align-items: center;
+
+}
+
+article div {
+    display: block;
+    background-color: gray;
+    grid-area: nav;
+    padding: 10px 10px; 
+    align-content: flex-start;
+    width: 320px;
+    height: 120px;
+}
+
 main{
     background-color: darkgray;
     grid-template-columns: 1fr;
@@ -44,22 +62,8 @@ section{
     grid-area: secction;
     padding: 10px 10px;
     align-content: center;
-    display: flexbox
-}
-
-  .sec{
-    height: 40px;
-    align-content: center;
-  }  
-
-  .art{
-    height: 120px ;
-    background-color: grey;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+    display: flexbox;
+    }
 
 aside{
     display: grid;
@@ -76,3 +80,10 @@ footer{
     padding: 10px 10px;
     align-content: center;
 }
+
+@media (max-width: 600px) {
+    
+    body{
+        max-width: 100%;
+    }
+}           
