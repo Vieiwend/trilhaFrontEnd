@@ -25,7 +25,7 @@ body,li{
     padding-left: 40px;
 }
 
-figure{
+#ham{
     display: none;
 }
 
@@ -57,9 +57,12 @@ figure{
     }
    
     
-    figure{
+    #ham{
         display: flex;
         margin: 10px;
+        border: 0px;
+        padding: 0px;
+        background: none;
     }
  
     /*menu superior*/
@@ -80,7 +83,7 @@ figure{
     }
     
     #menuguer{
-        display: flex;
+        display: none;
     }
     
     #menuguer li{
