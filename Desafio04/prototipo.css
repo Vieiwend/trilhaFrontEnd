@@ -15,6 +15,9 @@
 body {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+    /*pq não ocupa toda tela?*/
     background-image: url("Imagem/2456205.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -24,13 +27,6 @@ body {
     display: block;
     flex-wrap: nowrap;  
     }
-
-
-header{
-    height: 150px;
-}
-/*container pai do menu, ao utiliza altura em px
-ele não fica responsivo, em vw sim*/
 
 #menu{
     display: flex;
@@ -56,7 +52,7 @@ ele não fica responsivo, em vw sim*/
 }
 
 #lista{
-    font-family: 'Droid';
+    font-family: 'open';
     width: 60%;
     display: flex;
     flex-wrap: nowrap;
@@ -67,7 +63,7 @@ ele não fica responsivo, em vw sim*/
     margin-right: 40px;
     margin-left: 20px;
     list-style: none;
-    font-size: 18px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
          
@@ -76,95 +72,121 @@ ele não fica responsivo, em vw sim*/
 
 #lista.li{
     padding-right: 100px;
-    
-}
+ }
+
+
+/*Para alterar a cor do link e retirar o sublinhado*/
 
 #login{
     max-width: 17%;
     min-width: 12%;
+    max-height: 60px;
+    
     padding: 5px 0px 5px 0px;
     border-radius: 10px;
     background-color: white;
     color: darkblue;
     border: 3px solid darkblue;
     box-shadow: 0px 4px darkblue;
+    font-size: 1vw;
 }
+
+a:link {
+    text-decoration: none;
+    background-color: transparent;
+    color: grey;
+}   
 /*Até aqui Menu superior*/
+#formcontact{
+    display: flex;
+    margin-top: 90px;
+    margin-right: 10%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    height: 120px;
+    border: none;
+    
+}
+
 #form{
     display: grid;
-    margin-left: 15%;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 10vw 10vw 150vw ;
+    margin-left: 16%;
+    grid-template-columns: 0.7fr 0.8fr;
+    grid-template-rows: 2fr 2fr 6fr;
     grid-template-areas: 
     "name email"
     "subject subject"
     "message message";
-    column-gap: 10px;
-    row-gap: 10px;
-   
-}
+    column-gap: 3px;
+    row-gap: 5px;
+    height: 110%;
+    background-color: white;
+    }
 
-#formcontact{
-    display: grid;
-    margin-left: 11%;
-    margin-right: 12%;
-       
-}
-
+    textarea:focus, input:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+    }
 
 #name{
     display: grid;
     grid-area: name;
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 5px 5px;
+    width: 80%;
     
-}
+    }
+
 
 #email{
     display: grid;
     grid-area: email;
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 5px 5px;
+    width: 90%;
 }
 
 #subject{
     display: grid;
     grid-area: subject;
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 5px 5px;
+    width: 95%;
 }
 
 #message{
     display: grid;
     grid-area: message;
-    border-radius: 10px;
-}
-
-fieldset{
-    margin: 0;
-    border: 0;
-    padding: 0;
-    height: 200px;
+    padding: 5px 5px;
+    border-radius: 8px;
+    
 }
 
 #send{
-    font: 'droid';
-    font-size: 20px;
+    font-family: 'open';
+    font-size: 13px;
     margin: 0;
     padding: 0;
-    max-width: 15%;
-    min-width: 15%; 
+    width: 12%;
     background-color: rgb(240, 175, 224);
     border-radius: 10px;
     color: darkblue;
     border: none;
     box-shadow: 0px 8px darkblue;
-    margin-left: 15%;   
-    
+    margin-left: 16%; 
+    height: 5%;
+    font
     
   
 }
 /*font-weight não funcionou
 nresponsividade dos botoes não funionou */
 
-@media screen {max-width: 540px;
+
+
+
+
+
     
-}
+
     
