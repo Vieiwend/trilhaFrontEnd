@@ -1,21 +1,20 @@
 <script>
 
-$(document).ready(function () {
-            $("#ham").click(function () {
-                if ($("#menuguer").is(":visible")) {
-                    $("#menuguer").hide();
-                } else {
-                    $("#menuguer").show();
-                }
-            })
-        });
-
-        $(window).resize(function () {
-            if ($(document).innerWidth() > 700) {
-                $("#menuguer").hide();
+    $(document).ready(function () {
+        $("#buttonbars").click(function () {
+            if ($("#form").is(":visible")) {
+                $("#form").hide();
+            } else {
+                $("#form").show();
             }
-        });
+        })
+    });
 
- 
+    $(window).resize(function () {
+        if ($(document).innerWidth() > 600) {
+            $("#form").hide();
+        }
+    });
+
 
 </script>   

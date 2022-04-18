@@ -11,37 +11,70 @@
     font-weight: normal;
     font-style: normal;
 }
-/*fontes não estão funcionando*/
+
 body {
-    padding: 0;
+    background: #d4a5c6;
     margin: 0;
+}
+
+.paicontent {
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
     width: 100%;
     height: 100%;
-    /*pq não ocupa toda tela?*/
-    background-image: url("Imagem/2456205.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    background-attachment: fixed;
-    align-content: center;
-    display: block;
-    flex-wrap: nowrap;  
-    }
+    padding-top: 50px;
+}
 
-#menu{
+.content {
+    background-color: white;
+    width: 70vw;
+    height: 500px;
+    box-shadow: 13px 13px 11px 1px #a76ea7;
+    background-image: url("imagem/boneco.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    
+}
+
+
+#menu {
     display: flex;
     background-color: white;
-    margin-top: 4%;
-    margin-left: 11%;
-    margin-right: 12%;
+    padding-top: 0;
     height: 100%;
     text-decoration: none;
     justify-content: space-around;
     align-items: center;
-   }
-/*- margin-left and right para centralizar o box na página*/
+}
 
-#logo{
+.contact {
+    margin-left: 60px;
+    color: #433c6b;
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 60px
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+#contus {
+    display: none;
+}
+
+#logo {
     font-family: 'open';
     font-size: 30px;
     display: flex;
@@ -51,7 +84,15 @@ body {
     background-color: white;
 }
 
-#lista{
+#logo2 {
+    display: none;
+}
+
+#lorem {
+    display: none;
+}
+
+#lista {
     font-family: 'open';
     width: 60%;
     display: flex;
@@ -60,133 +101,426 @@ body {
     background-color: transparent;
     padding: 20px;
     padding-left: 40px;
-    margin-right: 40px;
-    margin-left: 20px;
     list-style: none;
     font-size: 14px;
     margin: 0;
     padding: 0;
-         
+
 }
 
 
-#lista.li{
-    padding-right: 100px;
- }
+#lista2 {
+    display: none;
+}
 
 
 /*Para alterar a cor do link e retirar o sublinhado*/
 
-#login{
-    max-width: 17%;
-    min-width: 12%;
+.botao {
     max-height: 60px;
-    
     padding: 5px 0px 5px 0px;
     border-radius: 10px;
     background-color: white;
     color: darkblue;
     border: 3px solid darkblue;
     box-shadow: 0px 4px darkblue;
-    font-size: 1vw;
+    font-size: 15px;
+    height: 50px;
+    width: 80px;
 }
 
 a:link {
     text-decoration: none;
     background-color: transparent;
     color: grey;
-}   
+}
+
 /*Até aqui Menu superior*/
-#formcontact{
+
+#formcontact {
     display: flex;
-    margin-top: 90px;
-    margin-right: 10%;
-    margin-left: 2%;
+    margin-top: 10px;
     margin-bottom: 2%;
     height: 120px;
     border: none;
-    
+
 }
 
-#form{
+.send {
+    background-color: #e3bdd4 !important;
+    margin-top: 10px;
+}
+
+#form {
     display: grid;
-    margin-left: 16%;
+    margin-left: 60px;
     grid-template-columns: 0.7fr 0.8fr;
     grid-template-rows: 2fr 2fr 6fr;
-    grid-template-areas: 
-    "name email"
-    "subject subject"
-    "message message";
+    grid-template-areas:
+        "name email"
+        "subject subject"
+        "message message";
     column-gap: 3px;
     row-gap: 5px;
     height: 110%;
     background-color: white;
-    }
+}
 
-    textarea:focus, input:focus {
-        box-shadow: 0 0 0 0;
-        outline: 0;
-    }
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
 
-#name{
+.form {
+    border-radius: 8px;
+    padding: 5px 5px;
+    border: grey 1px solid;
+}
+
+#form2 {
+    display: none;
+}
+
+#name {
     display: grid;
     grid-area: name;
-    border-radius: 8px;
-    padding: 5px 5px;
+
     width: 80%;
-    
-    }
+
+}
 
 
-#email{
+#email {
     display: grid;
     grid-area: email;
-    border-radius: 8px;
-    padding: 5px 5px;
+
     width: 90%;
 }
 
-#subject{
+#subject {
     display: grid;
     grid-area: subject;
-    border-radius: 8px;
-    padding: 5px 5px;
+
     width: 95%;
 }
 
-#message{
+#message {
     display: grid;
     grid-area: message;
-    padding: 5px 5px;
-    border-radius: 8px;
+    height: 70px;
+
+}
+
+#boneco {
+    display: none;
+    position: relative;
+    border: 2px solid black;
+    background-image: url("imagem/boneco.jpg");
+    background-attachment: scroll;
+    height: 350px;
+    width: 400px;
+
+}
+
+#bars {
+    display: none;
+}
+
+hr {
+    display: none;
+}
+
+#startchat {
+    display: none;
+}
+
+#boximg{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: auto
     
 }
 
-#send{
-    font-family: 'open';
-    font-size: 13px;
-    margin: 0;
-    padding: 0;
-    width: 12%;
-    background-color: rgb(240, 175, 224);
-    border-radius: 10px;
-    color: darkblue;
-    border: none;
-    box-shadow: 0px 8px darkblue;
-    margin-left: 16%; 
-    height: 5%;
-    font
-    
-  
+#img{
+    display: flex;
+    width: 50%;
+    margin-top: 20px;
 }
-/*font-weight não funcionou
-nresponsividade dos botoes não funionou */
+
+#buttonbars{
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    #paimenor {
+        display: flex;
+
+        margin: 10px;
+    }
+
+    .paicontent {
+        align-content: center;
+        flex-direction: row;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        background-color: white;
+        width: 100%;
+        height: 500px;
+        background-image: none;
+        box-shadow: none;
+        margin: 0;
+    }
+
+
+    #menu {
+        display: flex;
+        background-color: white;
+        padding-top: 10px;
+        height: 100%;
+        text-decoration: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    h1 {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+
+    #contus {
+        display: block;
+        text-transform: uppercase;
+        font-size: 12vw;
+        color: purple;
+        margin: 10px;
+        text-align: center;
+        word-spacing: 5px;
+        margin-left: 30px;
+        margin-right: 30px;
+        /*word-spacing: espaçamento entre as palavras*/
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo2 {
+        font-family: 'open';
+        font-size: 20px;
+        display: flex;
+        margin: 0;
+        width: auto;
+        color: purple;
+        background-color: white;
+        text-transform: uppercase;
+        margin-left: 30px;
+
+    }
+
+    #bars {
+        display: block;
+        margin-right: 30px;
+        height: 30px;
+        width: 30px;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    #lorem {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 9px;
+        color: gray;
+        margin: 10px 30px;
+        text-align: right;
+        line-height: 2;
+        /*line-heigth espaça as linhas*/
+    }
+
+    hr {
+        display: block;
+        margin-top: 30px;
+    }
+
+    #lista {
+        display: none;
+    }
+
+    #lista2 {
+        display: none;
+    }
+
+
+    /*Até aqui Menu superior*/
+
+    #formcontact {
+        display: none;
+        margin-top: 10px;
+        margin-bottom: 2%;
+        height: 120px;
+        border: none;
+
+    }
+
+    #formcontact2 {
+        display: block;
+        margin-top: 50px;
+
+        height: 140px;
+        border: none;
+
+    }
+
+    .form {
+        border-radius: 8px;
+        padding: 5px 5px;
+        box-shadow: 4px 4px 10px rgb(175, 172, 172);
+    }
+
+    .botao {
+        display: none;
+    }
+
+    #buttonbars{
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+
+    #form {
+        display: block;
+        margin-left: 60px;
+        grid-template-columns: 0.7fr 0.8fr;
+        grid-template-rows: 2fr 2fr 6fr;
+        grid-template-areas:
+            "name email"
+            "subject subject"
+            "message message";
+        column-gap: 3px;
+        row-gap: 5px;
+        height: 110%;
+        background-color: white;
+
+    }
 
 
 
+    input:focus {
+        background-image: none;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+        /*backgroud não funciona*/
+    }
+
+    #form2 {
+        margin-left: 30px;
+        margin-right: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 6fr;
+        grid-template-areas:
+            "yourname"
+            "yoursubject"
+            "yourmessage";
+        row-gap: 7px;
+        height: 110%;
+        background-color: white;
+    }
+
+    .form {
+        border-radius: 8px;
+        padding: 5px 5px;
+        border: grey 1px solid;
+    }
+
+    #yourname {
+        display: grid;
+        grid-area: yourname;
+        height: 35px;
+        width: 100%;
+        background-image: url(imagem/yourname.png);
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
 
 
+    #yoursubject {
+        display: grid;
+        grid-area: yoursubject;
+        width: 100%;
+        height: 35px;
+        background-image: url(imagem/yoursubject.png);
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
 
-    
+    #yourmessage {
+        display: grid;
+        grid-area: yourmessage;
+        height: 130px;
+        width: 100%;
+        background-image: url(imagem/yourmessage.png);
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: top;
+        padding-left: 20px;
+        box-sizing: border-box;
 
-    
+    }
+
+
+    #startchat {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .send {
+        background-image: linear-gradient(to right, rgb(203 58 203), #4a004a);
+        margin-top: 25px;
+        color: white;
+        width: 130px;
+        border-radius: 20px;
+        border: none;
+        height: 40px;
+        font-size: 14px;
+        padding: 5px;
+        text-transform: uppercase;
+    }
+
+    #boneco {
+        display: none;
+    }
+
+    #img{
+        display: none;
+    }
+
+}

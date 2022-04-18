@@ -7,45 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="prototipo.css">
-    <link rel="tema" href="imagem/2456205.jpg">
     <link rel="js" href="prototipo.js">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-
 </head>
 
 <body>
-    <header>
-        <div id="menu">
-            <ul id="logo">
-                <p><strong>Logotype</strong></p>
-            </ul>
-            <ul id="lista">
-                <li><a href="#" style="color: grey;">Home</a></li>
-                <li><a href="Products.html" style="color: grey;">Products</a></li>
-                <li><a href="#" style="color: grey;">Downloads</a></li>
-                <li><a href="#" style="color: grey;">Store</a></li>
-                <li><a href="#" style="color: grey;">Contact Us</a></li>
-            </ul>
-            <!--Pq o color (a:link) não funciona no css? tem problema deixar aqui no style?-->
-            <button type="button" id="login">
-                <h2><strong>Log in</strong></h2>
-            </button>
+    <div id="paimenor">
+        <div class="paicontent">
+            <div class="content">
+                <header>
+                    <div id="menu">
+                        <ul id="logo">
+                            <p><strong>Logotype</strong></p>
+                        </ul>
+                        <ul id="logo2">
+                            <p><strong>Your</strong>logo</p>
+                        </ul>
+                        <button id="buttonbars">
+                            <img src="imagem/menu.png" alt="menu" id="bars">
+                        </button>
+                        <ul id="lista">
+                            <li><a href="#" style="color: grey;">Home</a></li>
+                            <li><a href="Products.html" style="color: grey;">Products</a></li>
+                            <li><a href="#" style="color: grey;">Downloads</a></li>
+                            <li><a href="#" style="color: grey;">Store</a></li>
+                            <li><a href="#" style="color: grey;">Contact Us</a></li>
+                        </ul>
+                        <!--Pq o color (a:link) não funciona no css? tem problema deixar aqui no style?-->
+                        <button type="button" class="botao">Log in</button>
+                    </div>
+                    <div>
+                        <ul id="lista2">
+                            <li><a href="#" style="color: grey;">Home</a></li>
+                            <li><a href="Products.html" style="color: grey;">Products</a></li>
+                            <li><a href="#" style="color: grey;">Downloads</a></li>
+                            <li><a href="#" style="color: grey;">Store</a></li>
+                            <li><a href="#" style="color: grey;">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <main>
+                    <div class="contact">
+                        <h1>Questions? </h1>
+                        <h2>Contact us :)</h2>
+                    </div>
+                    <p id="contus">Contact us</p>
+                    <p id="lorem"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eligendi magni alias
+                        optio
+                        saepe earum beatae quidem, rerum illum, aut ea maxime dolores sit tempora, accusamus cumque
+                        officia
+                        provident ratione.
+                    </p>
+                    <hr>
+                    <form action="contact" id="formcontact">
+                        <div id="form">
+                            <input class="form" id="name" type="text" name="name" placeholder="Name" required></input>
+                            <input class="form" id="email" type="email" name="email" placeholder="Email"
+                                required></input>
+                            <input class="form" id="subject" type="text" name="name" placeholder="Subject"
+                                required></input>
+                            <textarea class="form" id="message" rows="4" name="name" placeholder="Message"
+                                required></textarea>
+                            <button class="botao send" type="submit">Send <i
+                                    class="icon-camera-retro icon-large"></i></button>
+                        </div>
+                    </form>
+                    <form action="contact" id="formcontact2">
+                        <div id="form2">
+                            <input class="form" type="text" placeholder="Your Name" required id="yourname"></input>
+                            <input class="form" type="text" placeholder="Your Subject" required
+                                id="yoursubject"></input>
+                            <textarea class="form" type="text" rowns="6" placeholder="Your Message" required
+                                id="yourmessage"></textarea>
+                            <div id="startchat">
+                                <button class="send" type="submit">Start Chat <i
+                                        class="icon-camera-retro icon-large"></i></button>
+                            </div>
+                    </form>
+                </main>
+            </div>
         </div>
-    </header>
-    <form action="contact" id="formcontact">
-        <div id="form">
-            <input id="name" type="text" name="name" placeholder="Name" required>
-            <input id="email" type="email" name="email" placeholder="Email" required>
-            <input id="subject" type="text" name="name" placeholder="Subject" required>
-            <input id="message" type="text" name="name" placeholder="Message" required>
+    </div>
+    <footer>
+        <div id="boximg">
+            <img src="imagem/rodape.jpg" alt="rodape" id="img"></img>
         </div>
-    </form>
-    <button type="submit" id="send">
-        <h2><strong>Send</strong></h2>
-    </button>
-    <!--é semantico utilizar h2 sem ter utilizado h1?-->
+    </footer>
 </body>
 
 </html>
