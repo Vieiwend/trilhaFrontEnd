@@ -114,7 +114,6 @@ h2 {
 }
 
 
-/*Para alterar a cor do link e retirar o sublinhado*/
 
 .botao {
     max-height: 60px;
@@ -133,6 +132,10 @@ a:link {
     text-decoration: none;
     background-color: transparent;
     color: grey;
+}
+
+a:visited{
+    color: gray;
 }
 
 /*Até aqui Menu superior*/
@@ -459,10 +462,6 @@ hr {
         grid-area: yourname;
         height: 35px;
         width: 100%;
-        background-image: url(imagem/yourname.png);
-        background-repeat: no-repeat;
-        background-position-x: left;
-        background-position-y: center;
         padding-left: 20px;
         box-sizing: border-box;
     }
@@ -494,7 +493,6 @@ hr {
         box-sizing: border-box;
 
     }
-
 
     #startchat {
         display: flex;
