@@ -1,9 +1,9 @@
-$(document).ready(function () {
+
     $("#buttonbars").click(function () {
         $("#lista").toggle();
 
     });
-});
+
 
 /*esse é a mesma coisa que o visible
         if ($("#form").is(":visible")) {
@@ -14,6 +14,11 @@ $(document).ready(function () {
         
 $(window).resize(function () {
     if ($(document).innerWidth() > 600) {
+        $("#buttonbars").hide();
+        $("#lista").show();
+    }
+    else {
         $("#lista").hide();
+        $("#buttonbars").show();
     }
 });
