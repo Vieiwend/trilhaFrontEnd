@@ -1,0 +1,4 @@
+<hr aria-hidden="true">
+<p>Data do evento: {{ evento.data | date:'dd/MM/yyyy'}} </p>
+<p>Preço: {{evento.preco | currency: 'R$'}}</p>
+<p>Ingressos limitados ({{evento.vendidos | percent:'2.2-2'}} já foram vendidos)</p>
